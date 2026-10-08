@@ -1,1 +1,1 @@
-# Proyecto Ejemplo Terminal — Debian 13
+# Proyecto - Generador de Reportes de Rendimiento — Debian 13
