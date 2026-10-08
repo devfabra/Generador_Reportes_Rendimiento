@@ -2,6 +2,8 @@
 
 ## Resumen
 
-es una herramienta automatizada diseñada para procesar, analizar y visualizar métricas clave de rendimiento en tiempo real. Su objetivo principal es optimizar la toma de decisiones mediante la generacion de reportes consolidados (en formatos como PDF, HTML y CSV) a partir de fuentes de datos heterogéneas. La solución automatiza el filtrado de métricas, identifica cuellos de botella e indicadores clave de rendimiento (KPIs), reduciendo significativamente el tiempo manual requerido para la elaboración de informes operativos y ejecutivos.
+Este proyecto consiste en un generador de reportes de rendimiento orientado a entornos Linux. La herramienta recopila y monitorea métricas clave del sistema como el uso de CPU, memoria RAM y el estado de los procesos del sistema operativo en intervalos de tiempo predefinidos.
+
+Utilizando herramientas nativas de administración del sistema como 'top', 'vmstat' y 'ps', junto con la potencia de 'awk' para el procesamiento y la tabulación de datos, el script tranforma la métrica en bruto en un archivo estructurado en formato CSV ('.csv') listo para su posterior análisis cuantitativo y visualización.
 
 ## Tabla de contenido
