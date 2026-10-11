@@ -12,7 +12,7 @@ Script automatizado desarrollado en Bash para la recolección, estructuración y
 - [Características Principales](#características-principales)
 - [Prerrequisitos y Dependencias](#prerrequisitos-y-dependencias)
 - [Instalación](#instalación)
-- [Modo de Uso](#modo-del-uso)
+- [Modo de Uso](#modo-de-uso)
 - [Estructura del Repositorio](#estructura-del-repositorio)
 - [Diseño Técnico y Arquitectura](#diseño-técnico-y-arquitectura)
 - [Resultados Esperados](#resultados-esperados)
