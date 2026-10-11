@@ -109,7 +109,7 @@ Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_
 
 ### Autores
 
-Espacio para colocar los nombres de los integrantes del equipo:
+Integrantes del grupo:
 * Miguel Rodriguez
 * Sebastian Fabra
 * Said Sepulveda
