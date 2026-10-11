@@ -1,7 +1,7 @@
 # Generador de Reportes de Rendimiento en Bash - Debian 13
 
-> Proyecto de Aula – Sistemas Operativos  
-> Universidad Fundación Universitaria Compensar
+> Proyecto de Aula: Sistemas Operativos  
+> Universidad: Fundación Universitaria Compensar
 
 Script automatizado desarrollado en Bash para la recolección, estructuración y exportación de métricas del sistema operativo (CPU, RAM y procesos activos) hacia archivos CSV, utilizando herramientas nativas de Unix/Linux como `top`, `vmstat`, `free`, `ps` y filtrado avanzado con `awk`.
 
