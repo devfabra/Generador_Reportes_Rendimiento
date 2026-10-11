@@ -84,7 +84,7 @@ Generador_Reportes_Rendimiento/
 └── generador_reportes.sh # Script principal en Bash
 ```
 
-## 🧠 Diseño Técnico y Arquitectura
+## Diseño Técnico y Arquitectura
 
 El script opera mediante un bucle iterativo controlado en Bash, estructurado en las siguientes fases lógicas por cada muestra:
 
@@ -95,7 +95,7 @@ El script opera mediante un bucle iterativo controlado en Bash, estructurado en 
 5. **Estadísticas Globales de Tareas (`top`):** Ejecuta `top` en modo lote (`-b -n 1`) para extraer métricas globales del kernel, como el total de tareas y las ejecuciones activas.
 6. **Persistencia Automatizada (`reports/`):** Almacena de forma estructurada cada registro separado por comas utilizando redirección de texto (`>>`) en un archivo `.csv` con marca de tiempo única dentro del directorio de reportes.
 
-## 📈 Resultados Esperados
+## Resultados Esperados
 
 Al finalizar la ejecución, el script genera automáticamente un archivo `.csv` ubicado en la carpeta `reports/` (en la raíz del proyecto) con la siguiente estructura de columnas:
 
