@@ -79,11 +79,12 @@ Puedes especificar tu propio intervalo en segundos y la cantidad de muestras:
 ## Estructura del Repositorio
 ```text
 Generador_Reportes_Rendimiento/
-├── README.md                 # Documentación del proyecto
 ├── reports/                  # Carpeta de salida para los reportes CSV
 │   └── (archivos generados automáticamente)
-└── src/                      # Carpeta de código fuente
-└── generador_reportes.sh # Script principal en Bash
+├── src/                      # Carpeta de código fuente
+|   └── generador_reportes.sh # Script principal en Bash
+├── LICENSE
+├── README.md                # Documentación del proyecto
 ```
 
 ## Diseño Técnico y Arquitectura
