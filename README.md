@@ -110,7 +110,11 @@ Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_
 ### Autores
 
 Espacio para colocar los nombres de los integrantes del equipo:
+* Miguel Rodriguez
+* Sebastian Fabra
+* Said Sepulveda
+* Julian Rodriguez
 
 Proyecto desarrollado para la asignatura de **Sistemas Operativos**:
-* **[Tu Nombre Completo]** - *Implementación de scripts y lógica en Bash*
-* **[Nombre de tu Compañero/a]** - *Documentación, pruebas y validación en Linux*
+* **Sebastian Felipe Fabra Petro** - *Implementación de scripts y lógica en Bash*
+* **Miguel Rodriguez, Said Sepulveda, Julian Rodriguez** - *Documentación, pruebas y validación en Linux*
