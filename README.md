@@ -97,7 +97,7 @@ Al finalizar la ejecución, el script genera automáticamente un archivo `.csv` 
 ```csv
 Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_Total,Tasks_Running
 "2026-10-10 18:00:00",4,2,94,4120,3812,"code (12.5%)",312,2
-"2026-10-10 18:00:02",2,1,97,4125,3807,"bash (2.1%)",310,1
+"2026-10-10 18:00:02",2,1,97,4125,3807,"bash (2.1%)",310,1```
 
 ---
 
