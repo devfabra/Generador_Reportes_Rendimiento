@@ -80,3 +80,35 @@ Generador_Reportes_Rendimiento/
 └── src/                      # Carpeta de código fuente
     └── generador_reportes.sh # Script principal en Bash
 
+## 🧠 Diseño Técnico y Arquitectura
+
+El script opera mediante un bucle iterativo controlado en Bash, estructurado en las siguientes fases lógicas por cada muestra:
+
+1. **Marca Temporal (`date`):** Captura el momento exacto de la ejecución para garantizar la trazabilidad temporal en el análisis.
+2. **Estadísticas del Núcleo - CPU (`vmstat`):** Ejecuta una consulta al kernel omitiendo la media de inicio (`tail -1`) y aislando mediante `awk` los porcentajes de uso de usuario (`us`), sistema (`sy`) e inactivo (`id`).
+3. **Gestión de Memoria RAM (`free`):** Consulta el estado de la memoria en megabytes (`-m`), aplicando un respaldo lógico condicional para extraer dinámicamente los recursos usados y libres.
+4. **Proceso Crítico de Mayor Consumo (`ps`):** Realiza una instantánea (`snapshot`) de la tabla de procesos ordenándolos descendentemente por uso de CPU (`--sort=-%cpu`), aislando el comando líder.
+5. **Estadísticas Globales de Tareas (`top`):** Ejecuta `top` en modo lote (`-b -n 1`) para extraer métricas globales del kernel, como el total de tareas y las ejecuciones activas.
+6. **Persistencia Automatizada (`reports/`):** Almacena de forma estructurada cada registro separado por comas utilizando redirección de texto (`>>`) en un archivo `.csv` con marca de tiempo única dentro del directorio de reportes.
+
+## 📈 Resultados Esperados
+
+Al finalizar la ejecución, el script genera automáticamente un archivo `.csv` ubicado en la carpeta `reports/` (en la raíz del proyecto) con la siguiente estructura de columnas:
+
+```csv
+Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_Total,Tasks_Running
+"2026-10-10 18:00:00",4,2,94,4120,3812,"code (12.5%)",312,2
+"2026-10-10 18:00:02",2,1,97,4125,3807,"bash (2.1%)",310,1
+
+---
+
+### Autores
+
+Espacio para colocar los nombres de los integrantes del equipo:
+
+```markdown
+## 👥 Autores
+
+Proyecto desarrollado para la asignatura de **Sistemas Operativos**:
+* **[Tu Nombre Completo]** - *Implementación de scripts y lógica en Bash*
+* **[Nombre de tu Compañero/a]** - *Documentación, pruebas y validación en Linux*
