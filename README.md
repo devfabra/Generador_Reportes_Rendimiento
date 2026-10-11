@@ -49,35 +49,40 @@ Para ejecutar este script de manera correcta, necesitas:
    ```bash
    git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
    cd tu-repositorio
+   ```
 
 ## Modo de Uso
 
 1. **Otorga permisos de ejecución** al script principal (asegúrate de estar en la raíz del proyecto):
-   ```bash
-   chmod +x src/generador_reportes.sh
+```bash
+chmod +x src/generador_reportes.sh
+```
 
 Se puede ejecutar el script de dos maneras:
 
 2. **Con valores predeterminados**
 Toma una muestra de cada 5 segundos, realizando un total de 12 iteraciones (equivalente a 1 minuto de monitoreo):
-   ```bash
-   ./src/generador_reportes.sh
+```bash
+./src/generador_reportes.sh
+```
 
 3. Con parametros personalizados
 Puedes especificar tu propio intervalo en segundos y la cantidad de muestras:
-    ```bash
-    # Sintaxis: ./generador_reportes.sh [intervalo_sengundos] [total_iteraciones]
-    # Ejemplo: tomar una muestra cada 2 segundos, durante 30 iteraciones (1 minuto)
-    ./generador_reportes.sh 2 30
+```bash
+# Sintaxis: ./generador_reportes.sh [intervalo_sengundos] [total_iteraciones]
+# Ejemplo: tomar una muestra cada 2 segundos, durante 30 iteraciones (1 minuto)
+./generador_reportes.sh 2 30
+```
 
 ## Estructura del Repositorio
-    ```text
-    Generador_Reportes_Rendimiento/
-    ├── README.md                 # Documentación del proyecto
-    ├── reports/                  # Carpeta de salida para los reportes CSV
-    │   └── (archivos generados automáticamente)
-    └── src/                      # Carpeta de código fuente
-    └── generador_reportes.sh # Script principal en Bash
+```text
+Generador_Reportes_Rendimiento/
+├── README.md                 # Documentación del proyecto
+├── reports/                  # Carpeta de salida para los reportes CSV
+│   └── (archivos generados automáticamente)
+└── src/                      # Carpeta de código fuente
+└── generador_reportes.sh # Script principal en Bash
+```
 
 ## 🧠 Diseño Técnico y Arquitectura
 
@@ -97,7 +102,8 @@ Al finalizar la ejecución, el script genera automáticamente un archivo `.csv` 
 ```csv
 Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_Total,Tasks_Running
 "2026-10-10 18:00:00",4,2,94,4120,3812,"code (12.5%)",312,2
-"2026-10-10 18:00:02",2,1,97,4125,3807,"bash (2.1%)",310,1```
+"2026-10-10 18:00:02",2,1,97,4125,3807,"bash (2.1%)",310,1
+```
 
 ---
 
