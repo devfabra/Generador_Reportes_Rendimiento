@@ -105,9 +105,6 @@ Al finalizar la ejecución, el script genera automáticamente un archivo `.csv` 
 
 Espacio para colocar los nombres de los integrantes del equipo:
 
-```markdown
-## 👥 Autores
-
 Proyecto desarrollado para la asignatura de **Sistemas Operativos**:
 * **[Tu Nombre Completo]** - *Implementación de scripts y lógica en Bash*
 * **[Nombre de tu Compañero/a]** - *Documentación, pruebas y validación en Linux*
