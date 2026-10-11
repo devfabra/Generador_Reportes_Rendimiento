@@ -8,15 +8,15 @@ Script automatizado desarrollado en Bash para la recolección, estructuración y
 ---
 
 ## Tabla de Contenidos
-- [Acerca del Proyecto](#-acerca-del-proyecto)
-- [Características Principales](#-características-principales)
-- [Prerrequisitos y Dependencias](#-prerrequisitos-y-dependencias)
-- [Instalación](#-instalación)
-- [Modo de Uso](#-modo-del-uso)
-- [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Diseño Técnico y Arquitectura](#-diseño-técnico-y-arquitectura)
-- [Resultados Esperados](#-resultados-esperados)
-- [Autores](#-autores)
+- [Acerca del Proyecto](#acerca-del-proyecto)
+- [Características Principales](#características-principales)
+- [Prerrequisitos y Dependencias](#prerrequisitos-y-dependencias)
+- [Instalación](#instalación)
+- [Modo de Uso](#modo-del-uso)
+- [Estructura del Repositorio](#estructura-del-repositorio)
+- [Diseño Técnico y Arquitectura](#diseño-técnico-y-arquitectura)
+- [Resultados Esperados](#resultados-esperados)
+- [Autores](#autores)
 
 ---
 
