@@ -29,6 +29,7 @@ echo "--------------------------------------------------"
 # Escribir la cabecera del archivo CSV incluyendo métricas de ps y top
 echo "Timestamp,CPU_Usr,CPU_Sys,CPU_Idle,RAM_Used_MB,RAM_Free_MB,Top_Process_PS,Tasks_Total,Tasks_Running" > "$OUTPUT_FILE"
 
+# Todo lo que este dentro de este for se ejecuta una vez por muestra
 for ((i=1; i<=ITERACIONES; i++)); do
     TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
     
