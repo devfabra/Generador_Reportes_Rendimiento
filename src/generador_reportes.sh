@@ -9,8 +9,8 @@
 # Forzar idioma inglés para estandarizar las salidas de los comandos
 export LC_ALL=C
 
-REPORTS_DIR="../reports"
-mkdir -p "$REPORTS_DIR"
+REPORTS_DIR="../reports" # guardar la ruta relativa de reports
+mkdir -p "$REPORTS_DIR" # crea un directorio (reports) si no existe
 
 # Nombre del archivo CSV de salida con marca de tiempo
 OUTPUT_FILE="$REPORTS_DIR/reporte_rendimiento_$(date +%Y%m%d_%H%M%S).csv"
@@ -61,6 +61,7 @@ for ((i=1; i<=ITERACIONES; i++)); do
     # Escribir la línea formateada en el CSV
     echo "\"$TIMESTAMP\",$CPU_USR,$CPU_SYS,$CPU_IDLE,$RAM_USED,$RAM_FREE,\"$TOP_PROC_PS\",$TASKS_TOTAL,$TASKS_RUNNING" >> "$OUTPUT_FILE"
 
+    # Muestra cada muestra realizada por cada iteracion con su fecha y hora Ej. [1/12] Datos registrados a las (fecha y hora)
     echo "[$i/$ITERACIONES] Datos registrados a las $TIMESTAMP"
     
     # Esperar el intervalo especificado (excepto en la última iteración)
